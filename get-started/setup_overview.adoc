@@ -14,10 +14,10 @@ summary: Astra Control Center를 설치하고, UI에 로그인하고, 암호를 
 Astra Control Center는 스토리지 백엔드로 ONTAP 및 Astra 데이터 저장소를 지원 및 모니터링합니다. Astra Control Center를 설치하고, UI에 로그인하고, 암호를 변경하면 라이센스를 설정하고, 클러스터를 추가하고, 스토리지를 관리하고, 버킷을 추가할 수 있습니다.
 
 .작업
-*  a license for Astra Control Center
-*  cluster
-*  a storage backend
-*  a bucket
+* <<Astra Control Center에 대한 라이센스를 추가합니다>>
+* <<클러스터 추가>>
+* <<스토리지 백엔드를 추가합니다>>
+* <<버킷을 추가합니다>>
 
 
 
@@ -38,6 +38,7 @@ Astra Control Center 라이센스는 Kubernetes CPU 장치를 사용하여 CPU �
 
 NOTE: 설치가 라이센스 CPU 유닛 수를 초과하여 증가할 경우, Astra Control Center를 통해 새 애플리케이션을 관리할 수 없습니다. 용량이 초과되면 경고가 표시됩니다.
 
+.필요한 것
 에서 Astra Control Center를 다운로드한 경우 https://mysupport.netapp.com/site/products/all/details/astra-control-center/downloads-tab["NetApp Support 사이트"^]또한 NetApp 라이센스 파일(NLF)도 다운로드했습니다. 이 라이센스 파일에 대한 액세스 권한이 있는지 확인하십시오.
 
 .단계
@@ -67,11 +68,11 @@ TIP: 관리를 위해 Astra Control Center에 다른 클러스터를 추가하�
 Astra Control이 클러스터를 관리할 때 클러스터의 기본 스토리지 클래스를 추적합니다. 를 사용하여 스토리지 클래스를 변경하는 경우 `kubectl` 명령, Astra Control은 변경 사항을 되돌립니다. Astra Control에서 관리하는 클러스터의 기본 스토리지 클래스를 변경하려면 다음 방법 중 하나를 사용하십시오.
 
 * Astra Control API를 사용합니다 `PUT /managedClusters` 를 사용하여 다른 기본 스토리지 클래스를 할당합니다 `DefaultStorageClass` 매개 변수.
-* Astra Control 웹 UI를 사용하여 다른 기본 스토리지 클래스를 할당합니다. 을 참조하십시오  the default storage class.
+* Astra Control 웹 UI를 사용하여 다른 기본 스토리지 클래스를 할당합니다. 을 참조하십시오 <<기본 스토리지 클래스를 변경합니다>>.
 
 
 ====
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * 클러스터를 추가하기 전에 필요한 를 검토 및 수행합니다 link:add-cluster-reqs.html["선행 작업"^].
 
 
@@ -102,6 +103,7 @@ image:cluster-storage.png["에는 클러스터에 사용할 스토리지 클래�
 . 정보를 검토하고 모든 내용이 양호하면 * 클러스터 추가 * 를 선택합니다.
 
 
+.결과
 클러스터가 * 검색 * 상태로 전환되고 * 실행 * 으로 변경됩니다. Kubernetes 클러스터를 성공적으로 추가했으며 현재 Astra Control Center에서 관리하고 있습니다.
 
 
@@ -115,7 +117,7 @@ Astra Control에서 리소스를 관리할 수 있도록 스토리지 백엔드�
 
 Astra Control에서 스토리지 클러스터를 스토리지 백엔드로 관리하면 PVS(영구적 볼륨)와 스토리지 백엔드 간의 연결 및 추가 스토리지 메트릭을 얻을 수 있습니다.
 
-.무엇을 &#8217;기존 Astra Data Store 구축에 필요합니다
+.기존 Astra Data Store 구축에 필요한 사항
 * Kubernetes 앱 클러스터와 기본 컴퓨팅 클러스터가 추가되었습니다.
 +
 
@@ -123,15 +125,15 @@ IMPORTANT: Astra Data Store용 Kubernetes 앱 클러스터를 추가하고 Astra
 
 
 
-.무엇을 &#8217;새로운 Astra Data Store 배포가 필요할 것입니다
+.새로운 Astra Data Store 구축에 필요한 사항
 * 있습니다 link:../use/manage-packages-acc.html["배포하려는 설치 번들 버전을 업로드했습니다"] Astra Control에 액세스할 수 있는 위치
 * 배포에 사용할 Kubernetes 클러스터를 추가했습니다.
-* 을(를) 업로드했습니다  a license for Astra Control Center,Astra Data Store 라이센스 Astra Control에 액세스할 수 있는 위치에 배포할 수 있습니다.
+* 을(를) 업로드했습니다 <<Astra Control Center에 대한 라이센스를 추가합니다,Astra Data Store 라이센스>> Astra Control에 액세스할 수 있는 위치에 배포할 수 있습니다.
 
 
 .옵션
-*  storage resources
-*  an existing storage backend
+* <<스토리지 리소스 구축>>
+* <<기존 스토리지 백엔드를 사용합니다>>
 
 
 
@@ -205,6 +207,7 @@ NOTE: 각 노드에 대해 키에 대한 고유 레이블을 3개 이상 생성�
 . 구성을 검토하고 * deploy * 를 선택하여 설치를 시작합니다.
 
 
+.결과
 설치가 완료되면 백엔드가 에 나타납니다 `available` 활성 성능 정보와 함께 백엔드 목록의 상태입니다.
 
 
@@ -254,6 +257,7 @@ NOTE: 여기에 자격 증명을 입력한 사용자에게는 가 있어야 합�
 
 
 
+.결과
 백엔드가 에 나타납니다 `available` 목록의 상태로 요약 정보를 표시합니다.
 
 
@@ -308,7 +312,7 @@ TIP: 버킷 이름 및 설명은 백업을 생성할 때 나중에 선택할 수
 
 NOTE: 이 옵션은 사용자가 만든 첫 번째 버킷에는 나타나지 않습니다.
 
-.. 를 추가하여 계속합니다  S3 access credentials,자격 증명 정보.
+.. 를 추가하여 계속합니다 <<S3 액세스 자격 증명을 추가합니다,자격 증명 정보>>.
 
 
 

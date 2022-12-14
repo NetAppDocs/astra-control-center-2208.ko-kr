@@ -63,9 +63,9 @@ Astra Control을 사용하면 계층 구조의 수준(네임스페이스 및 해
 
 TIP: 예를 들어, "Maria"에 대해 주간 백업 주기를 갖는 백업 정책을 설정할 수 있지만 "MariaDB"(동일한 네임스페이스)를 더 자주 백업해야 할 수 있습니다. 이러한 요구사항에 따라 단일 네임스페이스 앱이 아니라 앱을 별도로 관리해야 합니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * Astra Control에 Kubernetes 클러스터가 추가되었습니다.
-* 클러스터에 설치된 애플리케이션 하나 이상  app installation methods,지원되는 앱 설치 방법에 대해 자세히 알아보십시오.
+* 클러스터에 설치된 애플리케이션 하나 이상 <<지원되는 앱 설치 방법,지원되는 앱 설치 방법에 대해 자세히 알아보십시오>>.
 * 하나 이상의 활성 포드.
 * Astra Control에 추가한 Kubernetes 클러스터에 지정된 네임스페이스입니다.
 * (선택 사항) 모든 Kubernetes 레이블 link:../use/manage-apps.html#app-management-requirements["지원되는 Kubernetes 리소스"].
@@ -80,12 +80,12 @@ TIP: 레이블은 식별을 위해 Kubernetes 객체에 할당할 수 있는 키
 Astra Control API를 사용하여 앱을 관리하는 방법에 대한 지침은 를 참조하십시오 link:https://docs.netapp.com/us-en/astra-automation/["Astra 자동화 및 API 정보"^].
 
 .애플리케이션 관리 옵션
-*  resources to manage as an app
-*  a namespace to manage as an app
+* <<앱으로 관리할 리소스를 정의합니다>>
+* <<앱으로 관리할 네임스페이스를 정의합니다>>
 
 
 .추가 앱 관리 옵션
-*  apps
+* <<앱 관리 취소>>
 
 
 
@@ -97,7 +97,7 @@ Astra Control API를 사용하여 앱을 관리하는 방법에 대한 지침은
 앱을 정의하면 클론, 스냅샷, 백업을 비롯한 Astra Control 작업에 포함할 항목을 보다 세부적으로 제어할 수 있습니다.
 
 
-WARNING: 앱을 정의할 때 보호 정책이 있는 여러 앱에 Kubernetes 리소스를 포함하지 않아야 합니다. Kubernetes 리소스의 보호 정책이 중복되어 데이터 충돌이 발생할 수 있습니다.  Separate Protection Policy for different releases,모범 사례에 대해 자세히 알아보십시오.
+WARNING: 앱을 정의할 때 보호 정책이 있는 여러 앱에 Kubernetes 리소스를 포함하지 않아야 합니다. Kubernetes 리소스의 보호 정책이 중복되어 데이터 충돌이 발생할 수 있습니다. <<예: 다른 릴리즈에 대한 별도의 보호 정책,모범 사례에 대해 자세히 알아보십시오.>>
 
 .단계
 . 응용 프로그램 페이지에서 * 정의 * 를 선택합니다.

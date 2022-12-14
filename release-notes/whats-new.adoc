@@ -47,6 +47,7 @@ NOTE: NetApp에서 제공한 특정 애플리케이션에 대한 기본 사전/�
 == 2022년 4월 26일(22.04.0)
 
 .세부 정보
+[%collapsible]
 ====
 .새로운 기능 및 지원
 * https://docs.netapp.com/us-en/astra-control-center-2204/get-started/setup_overview.html#add-a-storage-backend["Astra Control Center에서 Astra Data Store 배포"]
@@ -69,6 +70,7 @@ NOTE: NetApp에서 제공한 특정 애플리케이션에 대한 기본 사전/�
 == 2021년 12월 14일(21.12)
 
 .세부 정보
+[%collapsible]
 ====
 .새로운 기능 및 지원
 * https://docs.netapp.com/us-en/astra-control-center-2112/use/restore-apps.html["애플리케이션 복원"^]
@@ -96,6 +98,7 @@ NOTE: NetApp에서 제공한 특정 애플리케이션에 대한 기본 사전/�
 == 2021년 8월 5일(21.08)
 
 .세부 정보
+[%collapsible]
 ====
 Astra Control Center의 최초 릴리스.
 

@@ -13,7 +13,7 @@ summary: Astra Control Center에 패키지를 업로드하고 설치할 수 있�
 
 NetApp은 NetApp Support 사이트에서 다운로드할 수 있는 소프트웨어 패키지가 포함된 Astra Control Center에 대한 추가 기능을 제공합니다. Docker 및 아티팩트 저장소를 연결한 후 패키지를 업로드 및 가져와 Astra Control Center에 이 기능을 추가할 수 있습니다. CLI 또는 Astra Control Center 웹 UI를 사용하여 소프트웨어 패키지를 관리할 수 있습니다.
 
-.무엇을 &#8217;필요로 할거야
+.필요한 것
 * Astra Control Center가 설치된 Kubernetes 클러스터
 * 소프트웨어 패키지 이미지를 보관할 연결된 Docker 이미지 리포지토리입니다. 자세한 내용은 을 참조하십시오 link:manage-connections.html["리포지토리 연결을 관리합니다"].
 * 소프트웨어 패키지 바이너리 및 아티팩트를 보관하는 연결된 아티팩트 리포지토리입니다. 자세한 내용은 을 참조하십시오 link:manage-connections.html["리포지토리 연결을 관리합니다"].
@@ -71,6 +71,7 @@ Astra Control Center 웹 UI를 사용하여 연결된 저장소에 업로드된 
 . 추가 * 를 선택합니다.
 
 
+.결과
 번들 파일이 유효하고 패키지 이미지 및 아티팩트가 연결된 저장소에 있으면 패키지가 Astra Control Center에 추가됩니다. 상태 * 열의 상태가 * 사용 가능 * 으로 변경되면 패키지를 사용할 수 있습니다. 패키지 상태 위로 마우스를 가져가면 추가 정보를 볼 수 있습니다.
 
 
@@ -104,6 +105,7 @@ kubectl astra packages import -m BUNDLE_FILE -u SERVER -a ACCOUNT_ID -k TOKEN
 
 
 
+.결과
 번들 파일이 유효하고 패키지 이미지 및 아티팩트가 연결된 저장소에 있으면 패키지가 Astra Control Center에 추가됩니다.
 
 
@@ -125,6 +127,7 @@ Astra Control Center 웹 UI를 사용하여 이전에 Astra Control Center에서
 . 삭제 * 를 선택합니다.
 
 
+.결과
 패키지는 Astra Control Center에서 삭제되지만 패키지의 이미지 및 아티팩트는 저장소에 남아 있습니다.
 
 [discrete]
