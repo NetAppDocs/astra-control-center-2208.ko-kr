@@ -8,16 +8,16 @@
     <description>The latest updates from NetApp Documentation</description>
     <language>ko-kr</language>
     <ttl>60</ttl>
-    <pubDate>Tue, 22 Nov 2022 16:10:13 +0000</pubDate>
-    <lastBuildDate>Tue, 22 Nov 2022 16:10:13 +0000</lastBuildDate>
+    <pubDate>Thu, 15 Dec 2022 12:30:51 +0000</pubDate>
+    <lastBuildDate>Thu, 15 Dec 2022 12:30:51 +0000</lastBuildDate>
     
     
     
     <item>
-      <title>Astra Control Center의 이번 릴리스의 새로운 기능 (22 Nov 2022)</title>
-      <pubDate>Tue, 22 Nov 2022 16:07:57 +0000</pubDate>
-      <link>https://docs.netapp.com/ko-kr/astra-control-center-2208/release-notes/whats-new.html?time=1669133277</link>
-      <guid isPermaLink="false">Tue, 22 Nov 2022 16:07:57 +0000</guid>
+      <title>Astra Control Center의 이번 릴리스의 새로운 기능 (14 Dec 2022)</title>
+      <pubDate>Wed, 14 Dec 2022 18:31:40 +0000</pubDate>
+      <link>https://docs.netapp.com/ko-kr/astra-control-center-2208/release-notes/whats-new.html?time=1671042700</link>
+      <guid isPermaLink="false">Wed, 14 Dec 2022 18:31:40 +0000</guid>
       <description><![CDATA[ NetApp은 새로운 기능, 개선 사항 및 버그 수정을 제공하기 위해 Astra Control Center를 정기적으로 업데이트합니다. ]]></description>
     </item>
     
