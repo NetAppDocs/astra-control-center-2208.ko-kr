@@ -70,7 +70,6 @@ NOTE: 이러한 요구 사항에서는 Astra Control Center가 운영 환경에�
 * * Astra Trident/ONTAP 구성 *: Astra Control Center를 사용하려면 스토리지 클래스를 생성하고 기본 스토리지 클래스로 설정해야 합니다. Astra Control Center는 Astra Trident에서 제공하는 다음과 같은 ONTAP 드라이버를 지원합니다.
 +
 ** ONTAP - NAS
-** ONTAP-NAS-Flexgroup입니다
 ** ONTAP-SAN
 ** ONTAP-SAN - 경제성
 
