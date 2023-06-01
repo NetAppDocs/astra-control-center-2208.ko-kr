@@ -154,7 +154,7 @@ AWS 설명서에 따라 다음 단계를 완료하십시오. 을 참조하십시
 
 . AWS 가상 네트워크를 생성합니다.
 . EC2 컴퓨팅 인스턴스를 검토합니다. 이는 AWS의 베어 메탈 서버 또는 VM이 될 수 있습니다.
-. 인스턴스 유형이 마스터 및 작업자 노드에 대한 Astra 최소 리소스 요구 사항과 일치하지 않으면 AWS의 인스턴스 유형을 Astra 요구 사항에 맞게 변경합니다. 을 참조하십시오 link:../requirements.html["Astra Control Center 요구 사항"].
+. 인스턴스 유형이 마스터 및 작업자 노드에 대한 Astra 최소 리소스 요구 사항과 일치하지 않으면 AWS의 인스턴스 유형을 Astra 요구 사항에 맞게 변경합니다.  을 참조하십시오 link:../get-started/requirements.html["Astra Control Center 요구 사항"].
 . 백업을 저장할 AWS S3 버킷을 하나 이상 생성합니다.
 . AWS ECR(Elastic Container Registry)을 생성하여 모든 ACC 이미지를 호스팅합니다.
 +
@@ -561,11 +561,7 @@ NOTE: 이러한 요구 사항에서는 Astra Control Center가 운영 환경에�
 
 첫 번째 단계는 Azure에 RedHat OpenShift 클러스터를 설치하는 것입니다.
 
-설치 지침은 다음을 참조하십시오.
-
-* https://docs.openshift.com/container-platform/4.8/installing/installing_aws/installing-azure-default.html["Azure에 OpenShift 클러스터 설치"^].
-* https://docs.openshift.com/container-platform/4.8/installing/installing_azure/installing-azure-account.html#installing-azure-account["Azure 계정을 설치하는 중입니다"^].
-
+설치 지침은 의 RedHat 설명서를 참조하십시오 https://docs.openshift.com/container-platform["Azure에 OpenShift 클러스터 설치"^] 및 https://docs.openshift.com/container-platform["Azure 계정을 설치하는 중입니다"^].
 
 
 

@@ -275,7 +275,6 @@
   <block id="4d40a8e178faea46fe31329801bc6573" category="list-text">* 이미지 레지스트리 *: Astra Control Center 빌드 이미지를 푸시할 수 있는 기존 개인 Docker 이미지 레지스트리가 있어야 합니다. 이미지를 업로드할 이미지 레지스트리의 URL을 제공해야 합니다.</block>
   <block id="df819717a2baf5b48925d2b4cdaf4745" category="list-text">* Astra Trident/ONTAP 구성 *: Astra Control Center를 사용하려면 스토리지 클래스를 생성하고 기본 스토리지 클래스로 설정해야 합니다. Astra Control Center는 Astra Trident에서 제공하는 다음과 같은 ONTAP 드라이버를 지원합니다.</block>
   <block id="8321592ce24c8a122ecf26a63cfca407" category="list-text">ONTAP - NAS</block>
-  <block id="844e84da8e822b4a33c4d8188da97937" category="list-text">ONTAP-NAS-Flexgroup입니다</block>
   <block id="73a3350a1b91aeb6e2836fdf5975672c" category="list-text">ONTAP-SAN</block>
   <block id="3016c12c1db45f14c80c9c1731b9c26a" category="list-text">ONTAP-SAN - 경제성</block>
   <block id="a194c96c412e6851d927b9d0e77bba07" category="paragraph">OpenShift 환경에서 앱을 복제하는 동안, Astra Control Center는 OpenShift가 볼륨을 마운트하고 파일 소유권을 변경할 수 있도록 허용해야 합니다. 따라서 이러한 작업을 허용하려면 ONTAP 볼륨 내보내기 정책을 구성해야 합니다. 다음 명령을 사용하여 이 작업을 수행할 수 있습니다.</block>
@@ -802,7 +801,6 @@
   <block id="e874bd0f330d9513016dc844dfd62e6f" category="paragraph">AWS 설명서에 따라 다음 단계를 완료하십시오. 을 참조하십시오<block ref="b5a7979c22035fe192b9eb8d0cab1e4a" category="inline-link-rx"></block>.</block>
   <block id="9c7a256a23d947f541662b1e88bac33d" category="list-text">AWS 가상 네트워크를 생성합니다.</block>
   <block id="92d9212a67ec9da982a091cf92cb4347" category="list-text">EC2 컴퓨팅 인스턴스를 검토합니다. 이는 AWS의 베어 메탈 서버 또는 VM이 될 수 있습니다.</block>
-  <block id="b881f78be517f5315cfb2d556f3448f7" category="list-text">인스턴스 유형이 마스터 및 작업자 노드에 대한 Astra 최소 리소스 요구 사항과 일치하지 않으면 AWS의 인스턴스 유형을 Astra 요구 사항에 맞게 변경합니다. 을 참조하십시오 <block ref="32be9c8362ea42075ea0b5d43bb3b5d0" category="inline-link-macro-rx"></block>.</block>
   <block id="b109e192f966bb3bb3e8cd30e1a59bfa" category="list-text">백업을 저장할 AWS S3 버킷을 하나 이상 생성합니다.</block>
   <block id="e5c5351f3ea6206a7f110205b4155acc" category="list-text">AWS ECR(Elastic Container Registry)을 생성하여 모든 ACC 이미지를 호스팅합니다.</block>
   <block id="9d58e473a9f64a9efe76c63ca0a30602" category="admonition">ECR을 생성하지 않으면 Astra Control Center는 AWS 백엔드가 있는 Cloud Volumes ONTAP가 포함된 클러스터에서 모니터링 데이터에 액세스할 수 없습니다. 이 문제는 Astra Control Center를 사용하여 검색 및 관리하려는 클러스터에 AWS ECR 액세스 권한이 없을 때 발생합니다.</block>
@@ -913,9 +911,6 @@
   <block id="2cce86879561a32f83b0b211ad079596" category="section-title">Azure에 RedHat OpenShift 클러스터를 설치합니다</block>
   <block id="ac7776656696332f732a35f1a0662432" category="paragraph">첫 번째 단계는 Azure에 RedHat OpenShift 클러스터를 설치하는 것입니다.</block>
   <block id="4f6685bd07b182993d024dcf856ff5ae" category="inline-link">Azure에 OpenShift 클러스터 설치</block>
-  <block id="fef256305fde869fc9c1b90f96dbebe5" category="list-text"><block ref="6613cf818db4dcdf36b939920f432c05" category="inline-link-rx"></block>.</block>
-  <block id="eed9d4fe807c07d271c864a1240c1c3f" category="inline-link">Azure 계정을 설치하는 중입니다</block>
-  <block id="03936dba93dbfb5fc2df3ced6ce0b025" category="list-text"><block ref="2950a8cca92e141f7cc27cfe82878caa" category="inline-link-rx"></block>.</block>
   <block id="9b227636b2d4cea11291793360089d9f" category="section-title">Azure 리소스 그룹을 생성합니다</block>
   <block id="b15c7c1cada48f735340ffa1ec2e4b6d" category="paragraph">Azure 리소스 그룹을 하나 이상 생성합니다.</block>
   <block id="f754cf28e9ca6bd457246cb85d6d5535" category="admonition">OpenShift는 자체 리소스 그룹을 생성할 수 있습니다. 또한 Azure 리소스 그룹을 정의해야 합니다. OpenShift 설명서를 참조하십시오.</block>
@@ -2717,4 +2712,8 @@
   <block id="8ab08c3e81a1ee43c6b03a22403291db" category="section-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> 재해가 발생할 경우 최신 백업 또는 복제를 사용하여 원격 시스템으로 앱을 복구합니다</block>
   <block id="53c5fac0ba78b08ca3f0a270b746c5d2" category="section-title">다른 사용자의 암호를 재설정합니다</block>
   <block id="edb74efc05972c268b6cccf83996ac3e" category="section-title">사용자의 역할을 변경합니다</block>
+  <block id="1ba6670409b12d2ecffe5f765b22636d" category="list-text">인스턴스 유형이 마스터 및 작업자 노드에 대한 Astra 최소 리소스 요구 사항과 일치하지 않으면 AWS의 인스턴스 유형을 Astra 요구 사항에 맞게 변경합니다.  을 참조하십시오 <block ref="a41c664e3d2520e4c4deb907d0286272" category="inline-link-macro-rx"></block>.</block>
+  <block id="284a8b144f9341c750b469b574fb8c00" category="inline-link">Azure에 OpenShift 클러스터 설치</block>
+  <block id="026f21beafa7ab4dd2e0a19c7d485bb6" category="inline-link">Azure 계정을 설치하는 중입니다</block>
+  <block id="49ffba9fa4ce5bf749cec20def44c0b9" category="paragraph">설치 지침은 의 RedHat 설명서를 참조하십시오<block ref="2b5694f45e8e8a8a0bd04ce92001fd2c" category="inline-link-rx"></block> 및<block ref="b57239f3f933c36abb901cdf3e168d8f" category="inline-link-rx"></block>.</block>
 </blocks>
