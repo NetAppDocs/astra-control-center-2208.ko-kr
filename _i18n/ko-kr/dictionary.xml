@@ -918,7 +918,6 @@
   <block id="ac5af645cec8d25669a5a9893f571bcc" category="paragraph">을 참조하십시오<block ref="47e48c38bbba09ad0234959e4f70e6b5" category="inline-link-rx"></block>.</block>
   <block id="ffe7dbf60b2fbe9ee35b02eca9bedb83" category="section-title">Azure를 구성합니다</block>
   <block id="daee2a4caddb0f1fced149c9b185ab3e" category="paragraph">그런 다음 가상 네트워크를 만들고, 컴퓨팅 인스턴스를 설정하고, Azure Blob 컨테이너를 만들고, Astra Control Center 이미지를 호스팅하기 위해 ACR(Azure Container Register)을 만들고, 이 레지스트리로 이미지를 푸시하도록 Azure를 구성합니다.</block>
-  <block id="310c2720a5523c6a1f55532ee951393c" category="paragraph">Azure 설명서에 따라 다음 단계를 완료합니다. 을 참조하십시오<block ref="604df1e02f9d2d76a67db6e61299339e" category="inline-link-rx"></block>.</block>
   <block id="52393bb21023d79ef4e0fa374e54b83d" category="list-text">Azure 가상 네트워크를 생성합니다.</block>
   <block id="d03589157dd63e1aaf5497955f5058f5" category="list-text">컴퓨팅 인스턴스를 검토합니다. Azure의 베어 메탈 서버 또는 VM이 될 수 있습니다.</block>
   <block id="b82f3e0352c4295f8db3114c4d861a92" category="inline-link-macro">Astra Control Center 요구 사항</block>
@@ -2662,7 +2661,6 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="874d8a5301794a9ca2aba132ac2460f3" category="sidebar">쿠버네티스 허브</block>
   <block id="213686afc3803be7caa09348765467fe" category="sidebar">도움을 받을 수 있는 곳</block>
-  <block id="f21f22dde0e0692333a7a28cce456b08" category="sidebar">모든 Astra 문서</block>
   <block id="1d79052461351a56ef4f9bf9f5837f4a" category="sidebar">REST API를 사용하여 자동화</block>
   <block id="0b79795d3efc95b9976c7c5b933afce2" category="sidebar">소개</block>
   <block id="0460583622f03a52d7693094d6fa2452" category="sidebar">개념</block>
@@ -2720,4 +2718,6 @@
   <block id="dd38f906b37d412de7d1c1dcf4cbf31c" category="paragraph"><block ref="dd38f906b37d412de7d1c1dcf4cbf31c" category="inline-link-macro-rx"></block></block>
   <block id="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-macro"><block ref="8acb58cbd50ef1b468a020ee0bd351d3" category="inline-link-rx"></block></block>
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
+  <block id="55e97b9e5267c3f5615048df47e2403b" category="paragraph">Azure 설명서에 따라 다음 단계를 완료합니다. 을 참조하십시오<block ref="0e7a8da8480a9d852a625433095b0dfb" category="inline-link-rx"></block>.</block>
+  <block id="f9903cca48f50ecc8e61485163abb57b" category="sidebar">Astra Control Center 22.08 문서</block>
 </blocks>
